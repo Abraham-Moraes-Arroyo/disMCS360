@@ -1,0 +1,46 @@
+// derived class example
+class Square: public{
+public:
+// overloading "default" constructor; data member are intialized in 
+// base class Rectangle, hence the empty {}
+Square(double side): Rectangle(side, side)....
+
+
+
+// this is the definition, but not the declaration 
+//the decleration is going to be in the class under the private section 
+vector <double> getCenter(Rectangle R){
+// we get access to the private elements through the dot operator 
+v= {R.length/2, R.width/2};
+return v;
+}
+
+// the main point of the subclasses is so we don't have to redefine the variables, thus allowing us to save more time
+
+
+//can we overload destructor?
+//i.e.)
+class Square: public Rectangle{
+public:
+// overloading "default 
+Square(double side): Rectangle(side,side){};
+~Square(); // we are just deleting here, we can't overload destructors 
+// SO NO WE CAN OVERLAOD THE DESTRUCTOR 
+};
+
+// defined class destructor 
+Square::~Square(){}
+
+
+
+// what is the purpose of the ->
+Rectangle *R2= new Rectangle(8,9)<< endl;
+cout << R2-> dynamicShow()<< endl;
+// we use the -> instead of the . operator when we are given the address of the object 
+// instead of the address
+ 
+
+// when do we need to use the "this" command
+we use the this because the function was defined in the class, so when a function is defined in the class, 
+we need to find a way to access an object from that class. Basically we overload the operator and we create
+a new object (Cylinder) and give it the radius and height. 
